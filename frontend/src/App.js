@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import MovieList from './components/MovieList'
-import AddMovie from './components/AddMovie'
+import AddMovie from './pages/AddMovie'
 
 class App extends Component {
   render() {
@@ -24,7 +24,6 @@ class App extends Component {
             </div>
       </nav>
       <br/>
-        <Route path="/" exact component={MovieList} />
         <Route path="/add" exact component={AddMovie} />
       </div>
       </Router>
